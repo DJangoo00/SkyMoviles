@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".ExperienciasActivity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_margin="10dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="10dp"
+        app:contentPadding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:text="Carlos"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold"
+                android:padding="10dp"
+                android:textSize="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:textSize="14dp"
+                android:text="Escogí este restaurante para proponerle matrimonio a mi futura esposa, fue muy romántico y no puede haber tenido una mejor experiencia. El servicio fue impecable, nos sirvieron la entrada y el plato fuerte a tiempo, la comida deliciosa. Me gustó mucho la música en vivo, el saxofón, el pianista y todo, fue excelente. Muchas gracias al club por sus atenciones."
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:text="Ingrid"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold"
+                android:padding="10dp"
+                android:textSize="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:textSize="14dp"
+                android:text="Toda una experiencia, desde el momento en que se llega al sitio se siente un ambiente agradable, tranquilo, cenar con vistas a la belleza de la ciudad es todo un placer. La comida es un delite, los platos que probé tenían sello de calidad, despierta la sensibilidad del gusto y olfato. Respecto a la atención es impecable, cada persona con la que tuvimos contacto fue muy amable y dados al servicio."
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:text="Bryan"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold"
+                android:padding="10dp"
+                android:textSize="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:textSize="14dp"
+                android:text="Maravillosa experiencia. La comida deliciosa, la atención inmejorable. Realmente el mejor restaurante en el que he estado en mucho tiempo."
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:text="Lina"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold"
+                android:padding="10dp"
+                android:textSize="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:textSize="14dp"
+                android:text="El lugar es fantástico, con una vista única y un ambiente armonioso; la comida exquisita, son su contraste de sabores genera una experiencia inigualable en cada bocado; la amabilidad y el servicio de su personal fueron indispensables para llevar a cabo detalle que tuvimos en cuenta en nuestra celebración. gratitud con todo el personal."
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

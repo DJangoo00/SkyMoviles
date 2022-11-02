@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/degradado"
+    tools:context=".PedidosActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:background="@drawable/degradado"
+        android:text="Restaurante &quot;SKY&quot;"
+        android:textColor="#213397"
+        android:textSize="34sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pedido"
+        android:textColor="#FFFCFC"
+        android:textSize="34sp" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/rbInstalacion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Consumir en las instalaciones"
+            android:textColor="#F8F7F7"
+            android:textSize="16sp" />
+
+        <RadioButton
+            android:id="@+id/rbDomicilio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Entrega a Domicilio"
+            android:textColor="#FAF6F6"
+            android:textSize="16sp" />
+
+        <RadioButton
+            android:id="@+id/rbLlevar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Para llevar"
+            android:textColor="#FAF6F6"
+            android:textSize="16sp" />
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnpedido"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="50dp"
+        android:layout_weight="1"
+        android:height="100dp"
+        android:background="@drawable/degradado"
+        android:onClick="pedido"
+        android:text="HAZ TU PEDIDO"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_margin="10dp"
+        app:cardElevation="10dp"
+        app:cardCornerRadius="10dp"
+        app:contentPadding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <ImageView
+        android:src="@drawable/galeria1"
+        android:layout_weight="2"
+        android:adjustViewBounds="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

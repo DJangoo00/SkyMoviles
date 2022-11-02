@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Restaurante SKY</string>
+    <string name="title_usuario">Username</string>
+    <string name="title_contraseña">Password</string>
+    <string name="title_ingresar">Login</string>
+    <string name="title_text">Cluster SKY Mission TIC S</string>
+</resources>
