@@ -7,16 +7,41 @@ import android.view.View
 import android.view.Window
 import android.view.WindowManager
 import android.widget.Button
+import androidx.drawerlayout.widget.DrawerLayout
+import androidx.navigation.NavController
+import androidx.navigation.NavHost
+import androidx.navigation.NavHostController
+import androidx.navigation.fragment.NavHostFragment
+import androidx.navigation.ui.AppBarConfiguration
+import androidx.navigation.ui.setupActionBarWithNavController
+import androidx.navigation.ui.setupWithNavController
+import com.google.android.material.navigation.NavigationView
 
 class MenuActivity : AppCompatActivity() {
 
+    private lateinit var appbarConfiguration: AppBarConfiguration
 
     override fun onCreate(savedInstanceState: Bundle?) {
 
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_menu);
+
         setSupportActionBar(findViewById(R.id.mytoolbar))
+
+        val drawerLayout:DrawerLayout = findViewById(R.id.drawer_layout)
+        val navView:NavigationView = findViewById(R.id.nav_view)
+        val navHostFragment = supportFragmentManager.findFragmentById(androidx.fragment.R.id.fragment_container_view_tag) as NavHostFragment
+        val navController = navHostFragment.navController
+
+
+        appbarConfiguration = AppBarConfiguration(setOf(), drawerLayout)
+        setupActionBarWithNavController(navController, appbarConfiguration)
+        navView.setupWithNavController(navController)
+
+
     }
+
+
     fun platos(btnplato:View){
         val plato=Intent(this,PlatosActivity::class.java)
         startActivity(plato)

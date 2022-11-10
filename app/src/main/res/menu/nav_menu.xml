@@ -1,4 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+    <item
+        android:id="@+id/navtobebidas"
+        android:icon="@android:drawable/ic_menu_add"
+        android:title="Bebidas"/>
+
+    <item
+        android:id="@+id/navtoplatos"
+        android:icon="@android:drawable/ic_menu_add"
+        android:title="Platos"/>
+
+    <item
+        android:id="@+id/navtopostres"
+        android:icon="@android:drawable/ic_menu_add"
+        android:title="Postres"/>
+
+    <item
+        android:id="@+id/navtonosotros"
+        android:title="SKY"
+        android:enabled="false"/>
 
 </menu>
