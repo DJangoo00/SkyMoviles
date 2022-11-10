@@ -15,6 +15,7 @@ class MenuActivity : AppCompatActivity() {
 
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_menu);
+        setSupportActionBar(findViewById(R.id.mytoolbar))
     }
     fun platos(btnplato:View){
         val plato=Intent(this,PlatosActivity::class.java)
