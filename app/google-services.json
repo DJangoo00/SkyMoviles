@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "350818028930",
+    "project_id": "restaurante-sky",
+    "storage_bucket": "restaurante-sky.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:350818028930:android:957a89f1bd62173249539b",
+        "android_client_info": {
+          "package_name": "com.example.restaurante"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "350818028930-kvvlcm59t6ci4djihgkqukfgg5gpuhm4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.restaurante",
+            "certificate_hash": "800b418bddcc72780b3e68d48e21f5f792e81789"
+          }
+        },
+        {
+          "client_id": "350818028930-c63v9aggetpv6bce70nocsok12sc3q0n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAQ7OPE7_FOddXVRQayF9V5F3Fe6aOFAIg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "350818028930-c63v9aggetpv6bce70nocsok12sc3q0n.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
