@@ -20,7 +20,7 @@
 
     <item
         android:id="@+id/navtonosotros"
-        android:title="SKY"
+        android:title="Restaurante SKY"
         android:enabled="false"/>
 
 </menu>

@@ -7,6 +7,7 @@ import android.view.View
 import android.widget.Toast
 import com.example.restaurante.databinding.ActivityMainBinding
 import com.google.firebase.firestore.FirebaseFirestore
+import com.google.firebase.firestore.ktx.getField
 
 
 class MainActivity : AppCompatActivity() {
@@ -23,22 +24,25 @@ class MainActivity : AppCompatActivity() {
         val db:FirebaseFirestore=FirebaseFirestore.getInstance()
 
         binding.btningresar.setOnClickListener{
-            var datos = ""
-            db.collection("usuarios")
-                .get()
-                .addOnSuccessListener { resultado ->
-                    for (documento in resultado){
-                        datos += "${documento.id}:${documento.data}\n"
+            if (binding.etusername.text.isNotBlank() && binding.etpassword.text.isNotBlank()){
+                db.collection("usuarios")
+                    .document(binding.etusername.text.toString())
+                    .get()
+                    .addOnSuccessListener {
+                        if (binding.etpassword.text.toString() == it.getField("Password")){
+                            val iniciarmenu = Intent(this, MenuActivity::class.java)
+                            startActivity(iniciarmenu)
+                        }
                     }
-                    val menu=Intent(this,MenuActivity::class.java)
-                    startActivity(menu)
-                }
-                .addOnFailureListener{
-                        excepcion->
-                    Toast.makeText(this, "Error al iniciar sesión", Toast.LENGTH_LONG).show()
+                    .addOnFailureListener {
+                        Toast.makeText(this, "Error al iniciar sesion", Toast.LENGTH_LONG).show()
+                    }
 
-                }
-        }
+            }
+            else{
+                Toast.makeText(this, "Complete los campos de usuario y password", Toast.LENGTH_LONG).show()
+            }
+                    }
     }
 
 
