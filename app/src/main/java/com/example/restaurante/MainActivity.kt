@@ -21,6 +21,12 @@ class MainActivity : AppCompatActivity() {
 
         setContentView(binding.root)
 
+        binding.btnregistrar.setOnClickListener {
+            val iniciarregistro = Intent(this, SignUpActivity::class.java)
+            startActivity(iniciarregistro)
+
+        }
+
         val db:FirebaseFirestore=FirebaseFirestore.getInstance()
 
         binding.btningresar.setOnClickListener{

@@ -2,6 +2,8 @@
     <string name="app_name">Restaurante SKY</string>
     <string name="title_usuario">Usuario</string>
     <string name="title_contraseña">Contraseña</string>
+    <string name="title_fullusename">Nombre completo de usuario</string>
     <string name="title_ingresar">Ingresar</string>
+    <string name="title_registrar">Registrar</string>
     <string name="title_text">Grupo SKY Misión TIC S</string>
 </resources>

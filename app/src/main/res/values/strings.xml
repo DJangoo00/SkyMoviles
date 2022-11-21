@@ -2,6 +2,19 @@
     <string name="app_name">Restaurante SKY</string>
     <string name="title_usuario">Username</string>
     <string name="title_contraseña">Password</string>
+    <string name="title_fullusename">Full username</string>
     <string name="title_ingresar">Login</string>
+    <string name="title_registrar">Sign Up</string>
     <string name="title_text">Cluster SKY Mission TIC S</string>
+    <string name="title_activity_frag_container">Frag_container_Activity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
 </resources>
