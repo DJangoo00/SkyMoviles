@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tvitemnombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nombres"
+        android:textSize="24sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/tvitemapellido"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Apellidos"
+        android:textSize="24sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/tvitememail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="E_mail"
+        android:textSize="24sp"
+        android:textStyle="italic"/>
+
+    <TextView
+        android:id="@+id/tvitemtelefono"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Teléfono"
+        android:textSize="24sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/tvitemdireccion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Dirección"
+        android:textSize="24sp"
+        android:textStyle="bold"/>
+
+
+
+
+</LinearLayout>
